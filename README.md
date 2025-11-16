@@ -43,7 +43,7 @@ $$
 At the free surface $y = \eta(x)$:
 
 $$
-\phi = \phi^S(x).
+\phi = \phi^S(x)
 $$
 
 ### Seabed (bottom boundary)
@@ -51,7 +51,7 @@ $$
 At the bottom $y = -d$, a no-flux (Neumann) condition is applied:
 
 $$
-\frac{\partial \phi}{\partial n} = 0.
+\frac{\partial \phi}{\partial n} = 0
 $$
 
 ---
@@ -61,11 +61,13 @@ $$
 At the left boundary $x = 0$ and right boundary $x = L_x$, periodicity is enforced:
 
 $$
-\phi(x = 0, y) = \phi(x = L_x, y),
+\phi(x = 0, y) = \phi(x = L_x, y)
 $$
+
+And the normal derivative satisfies:
 
 $$
 \frac{\partial \phi}{\partial n}\Big|_{x=0}
 =
--\frac{\partial \phi}{\partial n}\Big|_{x=L_x}.
+-\,\frac{\partial \phi}{\partial n}\Big|_{x=L_x}
 $$
