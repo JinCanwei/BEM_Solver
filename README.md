@@ -18,6 +18,9 @@ $$
 \frac{\partial \phi}{\partial n}_{x=0} = -\frac{\partial \phi}{\partial n}_{x=L_x} \\
 \phi_{x=0} = \phi_{x=L_x}
 $$ -->
+
+
+
 # BEM_Solver (2D): a solver based on the Boundary Element Method
 
 In this repository, we aim to build a simple two-dimensional Boundary Element Method (BEM) solver to compute the velocity field of a wave system using given surface information: the surface velocity potential $\phi^S(x)$ and the surface elevation $\eta(x)$.
@@ -30,9 +33,7 @@ For details of the theory, please refer to the **theory** folder in this reposit
 
 The governing equation for a 2D irrotational and incompressible wave field is the Laplace equation:
 
-$$
-\nabla^2 \phi = 0.
-$$
+$$ \nabla^2 \phi = 0 $$
 
 ---
 
@@ -42,17 +43,13 @@ $$
 
 At the free surface $y = \eta(x)$:
 
-$$
-\phi = \phi^S(x)
-$$
+$$ \phi = \phi^S(x) $$
 
 ### Seabed (bottom boundary)
 
 At the bottom $y = -d$, a no-flux (Neumann) condition is applied:
 
-$$
-\frac{\partial \phi}{\partial n} = 0
-$$
+$$ \frac{\partial \phi}{\partial n} = 0 $$
 
 ---
 
@@ -60,12 +57,23 @@ $$
 
 At the left boundary $x = 0$ and right boundary $x = L_x$, periodicity is enforced:
 
-$$
-\phi(x = 0, y) = \phi(x = L_x, y)
-$$
+$$ \phi(x = 0, y) = \phi(x = L_x, y) $$
 
 And the normal derivative satisfies:
 
-$$ 
-\frac{\partial \phi}{\partial n}\Big|_{x=0} = -\,\frac{\partial \phi}{\partial n}\Big|_{x=L_x}
-$$
+$$ \frac{\partial \phi}{\partial n}\Big|_{x=0} = -\frac{\partial \phi}{\partial n}\Big|_{x=L_x} $$
+
+---
+
+# The structure of this repository
+
+- `src_matlab`: source MATLAB code for demo and easy understanding  
+- `theory`: basic theory of BEM and the discretisation used  
+- `src_cpp`: high-performance C++ version (to be upgraded)
+
+---
+
+# How to Use?
+
+(Your instructions here)
+
