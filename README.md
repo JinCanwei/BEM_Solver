@@ -18,7 +18,6 @@ $$
 \frac{\partial \phi}{\partial n}_{x=0} = -\frac{\partial \phi}{\partial n}_{x=L_x} \\
 \phi_{x=0} = \phi_{x=L_x}
 $$ -->
-
 # BEM_Solver (2D): a solver based on the Boundary Element Method
 
 In this repository, we aim to build a simple two-dimensional Boundary Element Method (BEM) solver to compute the velocity field of a wave system using given surface information: the surface velocity potential $\phi^S(x)$ and the surface elevation $\eta(x)$.
@@ -66,7 +65,7 @@ $$
 $$
 
 $$
-\left.\frac{\partial \phi}{\partial n}\right|_{x=0}
+\frac{\partial \phi}{\partial n}\Big|_{x=0}
 =
--\,\left.\frac{\partial \phi}{\partial n}\right|_{x=L_x}
+-\frac{\partial \phi}{\partial n}\Big|_{x=L_x}.
 $$
