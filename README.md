@@ -66,8 +66,6 @@ $$
 
 And the normal derivative satisfies:
 
-$$
-\frac{\partial \phi}{\partial n}\Big|_{x=0}
-=
--\,\frac{\partial \phi}{\partial n}\Big|_{x=L_x}
+$$ 
+\frac{\partial \phi}{\partial n}\Big|_{x=0} = -\,\frac{\partial \phi}{\partial n}\Big|_{x=L_x}
 $$
