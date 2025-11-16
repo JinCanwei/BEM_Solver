@@ -41,7 +41,7 @@ $$
 
 ### Free surface (top boundary)
 
-At the free surface \(y = \eta(x)\):
+At the free surface \($y = \eta(x)$\):
 
 $$
 \phi = \phi^S(x).
@@ -49,7 +49,7 @@ $$
 
 ### Seabed (bottom boundary)
 
-At the bottom \(y = -d\), a no-flux (Neumann) condition is applied:
+At the bottom \($y = -d$\), a no-flux (Neumann) condition is applied:
 
 $$
 \frac{\partial \phi}{\partial n} = 0.
@@ -65,8 +65,4 @@ $$
 \phi(x = 0, y) = \phi(x = L_x, y),
 $$
 
-$$
-\left.\frac{\partial \phi}{\partial n}\right|_{x=0}
-=
--\,\left.\frac{\partial \phi}{\partial n}\right|_{x=L_x}.
-$$
+$$ \left.\frac{\partial \phi}{\partial n}\right|_{x=0} = -\,\left.\frac{\partial \phi}{\partial n}\right|_{x=L_x} $$
